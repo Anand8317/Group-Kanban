@@ -1,37 +1,37 @@
-const path = require("path");
+const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  entry: path.resolve(__dirname, "src/index.js"),
+  mode: 'development',
+  entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
     clean: true,
   },
   devtool: 'source-map',
-    devServer: {
-        static: {
-            directory: path.resolve(__dirname, "dist"),
-        },
-        open: true,
-        hot: true,
-        compress: true,
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
     },
+    open: true,
+    hot: true,
+    compress: true,
+  },
 
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
   plugins: [
     new HTMLWebpackPlugin({
-        title: 'movie-project',
-        filename: 'index.html',
-        template: 'src/index.html',
+      title: 'movie-project',
+      filename: 'index.html',
+      template: 'src/index.html',
     }),
-  ]
+  ],
 };
