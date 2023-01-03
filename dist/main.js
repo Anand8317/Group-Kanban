@@ -26,11 +26,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-<<<<<<< HEAD:dist/main.js
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: bisque;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.quote {\n  display: flex;\n  text-align: center;\n  width: 70%;\n  justify-content: center;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,YAAY;EACZ,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,UAAU;EACV,uBAAuB;AACzB","sourcesContent":["body {\n  background-color: bisque;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.quote {\n  display: flex;\n  text-align: center;\n  width: 70%;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
-=======
 ___CSS_LOADER_EXPORT___.push([module.id, "#header {\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n}\n\n.logo {\n  display: flex;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  height: 200px;\n  width: 300px;\n  background-repeat: no-repeat;\n  background-size: contain;\n  align-items: center;\n  background-position: center;\n}\n\n.head-text {\n  font-size: 25px;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,aAAa;EACb,yDAA6C;EAC7C,aAAa;EACb,YAAY;EACZ,4BAA4B;EAC5B,wBAAwB;EACxB,mBAAmB;EACnB,2BAA2B;AAC7B;;AAEA;EACE,eAAe;AACjB","sourcesContent":["#header {\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n}\n\n.logo {\n  display: flex;\n  background-image: url(\"/src/images/logo.png\");\n  height: 200px;\n  width: 300px;\n  background-repeat: no-repeat;\n  background-size: contain;\n  align-items: center;\n  background-position: center;\n}\n\n.head-text {\n  font-size: 25px;\n}\n"],"sourceRoot":""}]);
->>>>>>> add-header:dist/index.js
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -704,12 +700,9 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
 
-<<<<<<< HEAD:dist/main.js
 
-=======
->>>>>>> add-header:dist/index.js
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=main.js.map
