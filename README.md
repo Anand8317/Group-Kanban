@@ -1,1 +1,1 @@
-# Group-Kanban
+# webpack-boiler
