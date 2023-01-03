@@ -28,7 +28,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HTMLWebpackPlugin({
+    HTMLWebpackPlugin({
       title: 'movie-project',
       filename: 'index.html',
       template: 'src/index.html',
