@@ -5,14 +5,14 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
     clean: true,
   },
   devtool: 'source-map',
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'),
+      directory: path.resolve(__dirname, './dist'),
     },
     open: true,
     hot: true,
@@ -28,7 +28,7 @@ module.exports = {
     ],
   },
   plugins: [
-    HTMLWebpackPlugin({
+    new HTMLWebpackPlugin({
       title: 'movie-project',
       filename: 'index.html',
       template: 'src/index.html',
