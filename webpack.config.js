@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      title: 'Webpack setup',
+      title: 'movies-project',
       filename: 'index.html',
       template: 'src/index.html',
     }),
