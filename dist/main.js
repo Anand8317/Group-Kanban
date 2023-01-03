@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: bisque;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\r\n}\r\n\r\n.quote {\r\n  display: flex;\r\n  text-align: center;\r\n  width: 70%;\r\n  justify-content: center;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,YAAY;EACZ,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,UAAU;EACV,uBAAuB;AACzB","sourcesContent":["body {\r\n  background-color: bisque;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\r\n}\r\n\r\n.quote {\r\n  display: flex;\r\n  text-align: center;\r\n  width: 70%;\r\n  justify-content: center;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "#header {\n  display: flex;\n}\n\n.logo {\n  display: flex;\n  /* background-image: url(\"./images/logo.jpg\"); */\n}\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gDAAgD;AAClD","sourcesContent":["#header {\n  display: flex;\n}\n\n.logo {\n  display: flex;\n  /* background-image: url(\"./images/logo.jpg\"); */\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
