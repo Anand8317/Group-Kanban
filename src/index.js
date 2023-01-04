@@ -1,10 +1,4 @@
 import './style.css';
-import {apiCall} from './modules/apiCall';
-import render from './modules/render';
+import render from './modules/render.js';
 
-const run = async () => {
-  await apiCall();
-  render();
-}
-
-run();
+render();
