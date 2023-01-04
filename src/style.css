@@ -66,7 +66,7 @@ hr {
   width: 100px;
 }
 
-@media only screen and (min-width:601px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .card {
     width: 45%;
   }
