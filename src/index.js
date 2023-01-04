@@ -1,4 +1,10 @@
 import './style.css';
-import displayHomepage from './modules/displayHomepage.js';
+import {apiCall} from './modules/apiCall';
+import render from './modules/render';
 
-displayHomepage();
+const run = async () => {
+  await apiCall();
+  render();
+}
+
+run();
