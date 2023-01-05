@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { apiCall, dataJson } from './apiCall.js';
 import { likeData, getLikes } from './getLikes.js';
 import likePost from './likePost.js';
