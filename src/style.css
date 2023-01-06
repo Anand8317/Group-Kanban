@@ -108,8 +108,25 @@ hr {
   margin: auto;
   width: 100%;
   max-width: 700px;
-  color: magenta;
+  color: #e5e3c9;
   margin-bottom: 120px;
+
+  /* for animation */
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.9s;
+  animation-name: zoom;
+  animation-duration: 0.9s;
+}
+
+h2 {
+  color: magenta;
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 {
+  color: magenta;
+  font-size: 40px;
 }
 
 input[type="text"] {
@@ -136,11 +153,15 @@ input[type="submit"] {
   display: flex;
   height: 700px;
   width: 475px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+.modal-img:hover { opacity: 0.7; }
 
 .movie-details {
   display: flex;
-  gap: 100px;
+  gap: 50px;
+  padding-left: 100px;
 }
 
 /* The Close Button */
@@ -159,6 +180,16 @@ input[type="submit"] {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from { -webkit-transform: scale(0); }
+  to { -webkit-transform: scale(1); }
+}
+
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {

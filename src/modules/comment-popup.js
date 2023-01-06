@@ -1,7 +1,9 @@
+/* eslint-disable import/no-mutable-exports */
 import { apiCall, dataJson } from './apiCall.js';
-// import render from './render.js';
+import formDetails from './getFormDetails.js';
+import fetchComment from './fetchComments.js';
 
-const showPopup = async (id) => {
+const showPopup = async (id, commentList) => {
   await apiCall();
   const data = dataJson;
   const moviesList = data[0];
@@ -14,6 +16,7 @@ const showPopup = async (id) => {
       const popup = document.querySelector('#modal-popup');
       popup.innerHTML = '';
 
+      // Generate HTML for modal window
       popup.innerHTML += `<div id="modal">
         <span class="close"> &times;</span>
         <div class="modal-img"></div>
@@ -31,13 +34,12 @@ const showPopup = async (id) => {
         </div>
 
         <div class="comments">
-          <h2 class="comment-header">comments(2)</h2>
-          <p class="comment-text">12/15/2020 Sam: Best movies series ever</p>
-          <p class="comment-text">12/15/2020 Anand: Best movies series ever</p>
+          <h2 class="comment-header">comments( ${commentList.length} )</h2>
+          ${commentList.map((comment) => `<p class="comment-text">${comment.creation_date} ${comment.username}: ${comment.comment}</p>`).join('')}
         </div>
 
         <div class="comment-form">
-          <p>Add a comment</p>
+          <h2>Add a comment</h2>
           <form action="">
             <input
               type="text"
@@ -83,11 +85,13 @@ const giveComment = async () => {
   const commentBtn = document.querySelectorAll('.card-comment');
 
   // when comment btn is clicked
-  commentBtn.forEach((item) => {
+  commentBtn.forEach(async (item) => {
     const clickedbtn = item;
     clickedbtn.addEventListener('click', async () => {
       const ids = item.parentNode.id; // get dynamic ids of button..
-      await showPopup(ids);
+      const comments = await fetchComment(ids);
+      await showPopup(ids, comments);
+      formDetails(ids);
       collapsePopup();
     });
   });
