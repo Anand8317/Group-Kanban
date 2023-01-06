@@ -1,7 +1,7 @@
 import './style.css';
 import render from './modules/render.js';
 import homePageOption from './modules/homePageOption.js';
-import style from './modules/style';
+import style from './modules/style.js';
 
 const call = async () => {
   await render();

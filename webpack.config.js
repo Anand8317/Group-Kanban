@@ -30,8 +30,8 @@ module.exports = {
           outputPath: 'images',
           publicPath: 'images',
           emitFile: true,
-          esModule: false
-        }
+          esModule: false,
+        },
       },
     ],
   },
