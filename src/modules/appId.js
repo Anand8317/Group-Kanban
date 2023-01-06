@@ -6,7 +6,7 @@ const appId = async () => {
     .post(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps',
     )
-    .then((res) => console.log(res));
+    .then((res) => res);
 };
 
 export default appId;

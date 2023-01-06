@@ -9,7 +9,7 @@
   background-image: url('./images/tvicon.png');
   width: 170px;
   height: 100px;
-  border: 1px solid linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  border: 1px solid;
   border-radius: 25px;
   background-repeat: no-repeat;
   background-size: contain;

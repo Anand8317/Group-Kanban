@@ -1,4 +1,4 @@
-import { dataJson } from "./apiCall.js";
+import { dataJson } from './apiCall.js';
 
 function getCountHPItems() {
   return dataJson[0].length;

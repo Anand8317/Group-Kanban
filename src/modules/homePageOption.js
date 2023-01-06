@@ -1,3 +1,3 @@
-const homePageOption = ["Anime"];
+const homePageOption = ['Anime'];
 
 export default homePageOption;

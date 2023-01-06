@@ -11,7 +11,7 @@ const render = async () => {
   await getLikes();
   const content = document.getElementById('content');
   const dispCount = document.getElementById(homePageOption);
-  let count = getCountHPItems();
+  const count = getCountHPItems();
   dispCount.innerHTML = `<p class="head-text">${homePageOption} (${count})</p>`;
   content.innerHTML = '';
   await dataJson[0].forEach((element) => {

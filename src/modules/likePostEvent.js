@@ -1,5 +1,5 @@
-import render from './render';
-import likePost from './likePost';
+import render from './render.js';
+import likePost from './likePost.js';
 
 const likePostEvent = async () => {
   const allLikes = document.querySelectorAll('.card-like');
