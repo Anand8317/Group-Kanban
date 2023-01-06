@@ -22,6 +22,17 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(jpeg|png|jpg|svg|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images',
+          publicPath: 'images',
+          emitFile: true,
+          esModule: false
+        }
+      },
     ],
   },
   optimization: {
