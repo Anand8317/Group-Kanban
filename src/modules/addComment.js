@@ -15,7 +15,6 @@ class Comment {
         body: JSON.stringify(commentObject),
         headers: { 'Content-Type': 'application/json' },
       });
-      await response.json();
     };
 }
 export default Comment;
