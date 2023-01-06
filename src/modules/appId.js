@@ -1,4 +1,4 @@
-// const appId = "c3gboYetLUPBe0E2tsiz";
+// const appId = "YbqlchYfwG2Z8zqcNCrW";
 const axios = require('axios');
 
 const appId = async () => {
@@ -10,4 +10,3 @@ const appId = async () => {
 };
 
 export default appId;
-// YbqlchYfwG2Z8zqcNCrW
