@@ -1,14 +1,14 @@
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .logo {
   display: flex;
   background-image: url("/src/images/logo.png");
-  height: 200px;
-  width: 300px;
+  height: 100px;
+  width: 170px;
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
@@ -66,6 +66,7 @@ hr {
   background-color: white;
   width: 100px;
 }
+
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .card {
