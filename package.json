@@ -9,6 +9,11 @@
     "server": "node server.js",
     "build": "webpack"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Anand8317/webpack-boiler.git"
@@ -27,6 +32,7 @@
     "webpack-dev-middleware": "^6.0.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.2",
     "eslint": "^7.32.0",

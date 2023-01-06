@@ -15,7 +15,8 @@
   background-position: center;
 }
 
-.head-text {
+.head-text,
+p {
   font-size: 25px;
 }
 
@@ -65,6 +66,130 @@ hr {
   height: 30px;
   background-color: white;
   width: 100px;
+}
+
+/* comment popup */
+#modal-popup {
+  height: 100%;
+  display: none;
+  position: fixed;
+  overscroll-behavior: contain;
+
+  /* Stay in place */
+  z-index: 1;
+
+  /* Sit on top */
+  padding-top: 100px;
+
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  /* Full width */
+
+  /* Full height */
+  overflow: auto;
+
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+
+  /* Black w/ opacity */
+}
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  color: #e5e3c9;
+  margin-bottom: 120px;
+
+  /* for animation */
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.9s;
+  animation-name: zoom;
+  animation-duration: 0.9s;
+}
+
+h2 {
+  color: magenta;
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 {
+  color: magenta;
+  font-size: 40px;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 300px;
+}
+
+input[type="textarea"] {
+  height: 100px;
+  width: 500px;
+  margin-top: 25px;
+}
+
+input[type="submit"] {
+  height: 60px;
+  width: 150px;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.modal-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 700px;
+  width: 475px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-img:hover { opacity: 0.7; }
+
+.movie-details {
+  display: flex;
+  gap: 50px;
+  padding-left: 100px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from { -webkit-transform: scale(0); }
+  to { -webkit-transform: scale(1); }
+}
+
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {

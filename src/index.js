@@ -1,4 +1,9 @@
 import './style.css';
 import render from './modules/render.js';
+import giveComment from './modules/comment-popup.js';
 
-render();
+const call = async () => {
+  await render();
+  await giveComment();
+};
+call();
