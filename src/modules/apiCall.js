@@ -1,10 +1,9 @@
 import homePageOption from "./homePageOption.js";
-const dataJson = [];
+const dataJson = [''];
 const apiCall = async (homePageOption) => {
   await fetch(`https://api.tvmaze.com/search/shows?q=${homePageOption[0]}`)
     .then((data) => data.json())
     .then((data) => {
-      console.log(data);
       dataJson.length=0;
       dataJson.push(data);
     });
