@@ -1,9 +1,11 @@
 import './style.css';
 import render from './modules/render.js';
 import homePageOption from './modules/homePageOption';
+import giveComment from './modules/comment-popup.js';
 
 const call = async () => {
   await render();
+  await giveComment();
 };
 call();
 
@@ -18,10 +20,10 @@ homePageButtons.forEach((button) => {
 })
 
 
-import giveComment from './modules/comment-popup.js';
 
-const call = async () => {
-  await render();
-  await giveComment();
-};
-call();
+
+// const call = async () => {
+//   await render();
+  
+// };
+// call();
