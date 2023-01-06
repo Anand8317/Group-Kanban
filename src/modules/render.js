@@ -4,6 +4,7 @@ import { likeData, getLikes } from './getLikes.js';
 import likePost from './likePost.js';
 import homePageOption from './homePageOption.js';
 import getCountHPItems from './getCountHPItems.js';
+import giveComment from './comment-popup.js';
 
 const render = async () => {
   await apiCall(homePageOption);
@@ -40,6 +41,8 @@ const render = async () => {
       await render();
     });
   });
+
+  await giveComment();
 };
 
 export default render;

@@ -91,7 +91,6 @@ const giveComment = async () => {
     clickedbtn.addEventListener('click', async () => {
       const ids = item.parentNode.id; // get dynamic ids of button..
       const comments = await fetchComment(ids);
-      console.log(comments);
       await showPopup(ids, comments);
       formDetails(ids);
       collapsePopup();
