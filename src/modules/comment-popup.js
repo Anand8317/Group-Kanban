@@ -2,9 +2,10 @@
 import { apiCall, dataJson } from './apiCall.js';
 import formDetails from './getFormDetails.js';
 import fetchComment from './fetchComments.js';
+import homePageOption from './homePageOption.js';
 
 const showPopup = async (id, commentList) => {
-  await apiCall();
+  await apiCall(homePageOption);
   const data = dataJson;
   const moviesList = data[0];
 
