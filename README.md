@@ -7,7 +7,7 @@
 
 <div align="center">
 
-  <img src="src/Images/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="src/images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 
@@ -43,7 +43,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="Video-Demo"></a>
+## 🚀 Video Demo <a name="Video-Demo"></a>
 
 [Video Demo](https://drive.google.com/file/d/1Hah-RlVgLB7FiGDYTUddEkEp0vEgUmWd/view?usp=sharing)
 
@@ -52,14 +52,14 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo](https://anand8317.github.io/group-kanban/dist/)
+[Live Demo](https://anand8317.github.io/Group-Kanban/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-- Run this command: git clone https://github.com/Anand8317/group-kanban.git
+- Run this command: git clone https://github.com/Anand8317/Group-Kanban.git
 
 - Download the depedencies (node_modules)
 
@@ -83,7 +83,7 @@ Steps to clone the repository
 
 - Open the command prompt.
 
-- Run this command: git clone https://github.com/Anand8317/group-kanban.git
+- Run this command: git clone https://github.com/Anand8317/Group-Kanban.git
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +108,7 @@ Steps to clone the repository
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement the own database instead of using an API>
+- Implement the own database instead of using an API
 
 - Implement more category of movie shows and search and filter features.
 
@@ -119,7 +119,7 @@ Steps to clone the repository
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Anand8317/todo-list1/issues).
+Feel free to check the [issues page](https://github.com/Anand8317/Group-Kanban/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
