@@ -1,0 +1,329 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  background-image: url('./images/tvicon.png');
+  width: 170px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  background-position: center;
+}
+
+p {
+  font-size: 25px;
+}
+
+.head-text {
+  font-size: 22px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+hr {
+  width: 100%;
+}
+
+#footer-text {
+  padding-left: 2%;
+  font-size: 22px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  padding-bottom: 100px;
+  list-style-type: none;
+}
+
+.card-name-like-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 59%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 50px;
+  margin-top: 20px;
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+}
+
+.card-name-like-div > p {
+  font-size: 16px;
+}
+
+.card-like {
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  border: none;
+  border-radius: 25px;
+}
+
+.card-comment {
+  height: 30px;
+  background-color: white;
+  width: 100px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.card-comment:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: 1px solid;
+}
+
+.card-img {
+  border-radius: 25px;
+}
+
+/* comment popup */
+#modal-popup {
+  height: 100%;
+  display: none;
+  position: fixed;
+  overscroll-behavior: contain;
+
+  /* Stay in place */
+  z-index: 1;
+
+  /* Sit on top */
+  padding-top: 100px;
+
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  /* Full width */
+
+  /* Full height */
+  overflow: auto;
+
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+
+  /* Black w/ opacity */
+}
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  color: #e5e3c9;
+  margin-bottom: 120px;
+
+  /* for animation */
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.9s;
+  animation-name: zoom;
+  animation-duration: 0.9s;
+}
+
+h2 {
+  color: magenta;
+  text-align: center;
+  font-size: 25px;
+}
+
+h1 {
+  color: magenta;
+  font-size: 22px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+}
+
+input[type="textarea"] {
+  height: 100px;
+  width: 300px;
+  margin-top: 25px;
+}
+
+input[type="submit"] {
+  height: 60px;
+  width: 150px;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.modal-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-position: center;
+}
+.modal-img:hover { opacity: 0.7; }
+
+.movie-details {
+  display: flex;
+  padding-left: 100px;
+  flex-wrap: wrap;
+}
+
+.site {
+  overflow-wrap: break-word;
+  width: 250px;
+}
+
+.comment-text {
+  width: 300px;
+  overflow-wrap: break-word;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from { -webkit-transform: scale(0); }
+  to { -webkit-transform: scale(1); }
+}
+
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.homePageOptions {
+  border: none;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  border-radius: 25px;
+  width: 150px;
+}
+
+.homePageOptions:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+
+  .head-text {
+    font-size: 16px;
+  }
+
+  .homePageOptions {
+    width: 120px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 100px;
+  }
+  input[type="text"] { width: 300px; }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .head-text {
+    font-size: 14px;
+  }
+
+  .homePageOptions {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  input[type="text"] { width: 300px; }
+  input[type="textarea"] { width: 500px; }
+
+  .modal-img {
+    height: 700px;
+    width: 475px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .movie-details {
+    display: flex;
+    gap: 50px;
+    padding-left: 100px;
+  }
+
+  .site {
+    overflow-wrap: break-word;
+  }
+
+  .comment-text {
+    width: 500px;
+    overflow-wrap: break-word;
+  }
+}
