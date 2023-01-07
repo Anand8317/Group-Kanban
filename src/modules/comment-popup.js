@@ -30,7 +30,7 @@ const showPopup = async (id, commentList) => {
           </div>
           <div class="modal-item">
             <p>type:<br>${movie.show.type}</p>
-            <p>official site:<br> ${movie.show.officialSite}</p>
+            <p class="site">official site:<br> ${movie.show.officialSite}</p>
           </div>
         </div>
 
@@ -47,6 +47,7 @@ const showPopup = async (id, commentList) => {
               id="fname"
               value=""
               placeholder="Your name"
+              maxlength="35"
               required
             /><br />
             <input
@@ -55,6 +56,7 @@ const showPopup = async (id, commentList) => {
               rows="4"
               cols="50"
               placeholder="Your insights"
+              maxlength="60"
               required
             /><br />
             <input
